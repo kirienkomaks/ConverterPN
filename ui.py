@@ -185,7 +185,6 @@ class ChildPlace(tk.Toplevel):
         self.count = 0
         self.get_places_count()
         self.init_child()
-        self.place_name = ""
 
     def init_child(self):
         self.title('Add Place')
@@ -204,8 +203,7 @@ class ChildPlace(tk.Toplevel):
 
         btn_ok = ttk.Button(self, text='Add', command=self.destroy)
         btn_ok.place(x=30, y=100)
-        self.place_name = "P" + str(self.count)
-        btn_ok.bind('<Button-1>', lambda event: self.view.records_place(self.placeName,
+        btn_ok.bind('<Button-1>', lambda event: self.view.records_place("P" + str(self.count),
                                                                         self.entry_place_marks.get()), self.destroy)
 
         self.grab_set()
