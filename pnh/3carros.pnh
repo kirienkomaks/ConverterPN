@@ -1,0 +1,26 @@
+12
+9
+111xxx000000
+x00000010000
+00010000x000
+0x0000100000
+00x000000001
+0000010000x0
+000010000x00
+000000xx111x
+000111000000
+
+;Places=Car1_move;Car2_move;Car3_move;Car1_ready;Car2_ready;Car3_ready;Car2_at_end;Car1_at_end;Car1_move_back;Car2_move_back;Car3_move_back;Car3_at_end
+;Transitions=GO;B1;A1;B2;B3;A3;A2;BACK
+
+;Benchmark: _3carros
+;Author: University of Lisboa
+;Date of creation: Mon Jun 24 03:22:43 2013
+;Last modification: 02.07.2019
+;Modified by: Marcin Wojnakowski
+;Converted via: pnml2pnh (daniel.m.kur@gmail.com)
+
+;Classification: Marked Graphs
+;Covered by p-invariants: TRUE
+;Safe: TRUE
+;Live: TRUE

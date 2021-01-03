@@ -1,0 +1,37 @@
+15
+19
+x10000000000000
+1x0000000000000
+0x1000000000000
+01x000000000000
+000x1000000000x
+0001x0000000001
+0000x1000000000
+00001x000000000
+x00000x10000000
+0000000x1000000
+00000000x100000
+000000001x00000
+00100000x010000
+000x000000x1000
+00000000000x100
+000000000001x00
+00000100000x010
+0000001000000x0
+100100100000001
+
+;Places=P1;P2;P3;P4;P5;P6;P7;P8;P9;P10;P11;P12;P13;P14;P15
+;Transitions=t1;t2;t3;t4;t5;t6;t7;t8;t9;t10;t11;t12;t13;t14;t15;t16;t17;t18
+
+;Benchmark: "Two-Pusher"
+;Designed by: L.Stefanowicz (L.Stefanowicz@weit.uz.zgora.pl)
+;Target: decomposition
+;Date of creation: 03.07.2013
+;Last modification: 02.07.2019
+;Modified by: Marcin Wojnakowski
+;Designed: http://rutcor.rutgers.edu/~pinzon/papers/rrr1/node29.html
+
+;Classification: Simple Net
+;Covered by p-invariants: FALSE
+;Live: TRUE
+;Safe: FALSE

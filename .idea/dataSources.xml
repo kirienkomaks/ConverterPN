@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="placesDB" uuid="3e8b24f2-5e09-45b9-9ca3-a7f87b630005">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Reverse\PycharmProjects\ConverterPN\placesDB.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="transitionsDB" uuid="ae7cb173-7fc0-49bd-802f-d5372bb80ce4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Reverse\PycharmProjects\ConverterPN\transitionsDB.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

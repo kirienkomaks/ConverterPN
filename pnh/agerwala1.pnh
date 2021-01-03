@@ -1,0 +1,27 @@
+8
+5
+11x00000
+x001x000
+0x100xx1
+000x111x
+01001110
+
+;Places=P0;P1;P2;P3;P4;P5;P6;P7
+;Transitions=T0;T1;T2;T3
+
+;Benchmark: "argewala1"
+;Source: Putting Petri Nets to Work
+;Source_www: https://www.computer.org/csdl/mags/co/1979/12/01658580.pdf
+;Source_fig_name: Figure 4. page 4
+;Designed by: bartosz.z@hotmail.com
+;Type of benchmark: 
+;Target: 
+;Date of creation: 12.03.2016
+;Last modification: 28.07.2016
+;Converted via: XML2TAB (L.Stefanowicz@weit.uz.zgora.pl)
+
+;Classification: Free Choice Net
+;Covered by p-invariants: TRUE
+;Live: TRUE
+;Bounded: TRUE
+;Safe: TRUE

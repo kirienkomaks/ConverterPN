@@ -1,0 +1,37 @@
+11
+14
+x1100000000
+0x010000000
+00x01000000
+000x0010000
+000x0010000
+0000x001000
+100000xx000
+0000x100000
+00000xx0101
+00000000x10
+000001000x0
+000000010x0
+0000001000x
+10000000000
+
+;Places=P0;P1;P2;P3;P4;P5;P6;P7;P8;P10;P6'
+;Transitions=T0;T1;T2;T3;T4;T5;T6;T7;T8;T9;T10;T11;T12
+
+;Benchmark: "barkaoui1"
+;Source: ISSN 1708-0460-CANADA
+;Source_fig_name: Figure 2.  page 59
+;Designed by: bartosz.z@hotmail.com
+;Type of benchmark: 
+;Target: 
+;Date of creation: 12.03.2016
+;Last modification: 12.01.2018
+;Modified by: lukaszstohnij3@gmail.com
+;Converted via: XML2TAB (L.Stefanowicz@weit.uz.zgora.pl)
+
+;Classification: Simple Net
+;Covered by p-invariants: TRUE
+;Live: TRUE
+;Bounded: TRUE
+;Safe: TRUE
+;Covered by SMCs: TRUE
