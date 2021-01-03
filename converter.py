@@ -130,7 +130,7 @@ class Converter(metaclass=Singleton):
 
     @staticmethod
     def write_pnh(pn):
-        f = open("generated_pnh\genereted_" + pn.name + ".pnh", "w")
+        f = open("generated_pnh\generated_" + pn.name + ".pnh", "w")
         f.write(str(len(pn.places)) + "\n")
         f.write(str(len(pn.transitions) + 1) + "\n")
 
@@ -478,10 +478,12 @@ class Converter(metaclass=Singleton):
 
 if __name__ == '__main__':
     converter = Converter()
-    if int(sys.argv[1]) == 0:
+    if len(sys.argv) < 2:
+        print("Error: Please, execute program with args")
+    elif int(sys.argv[1]) == 0:
         print("Converter PNH -> PNML")
         # PNM Reader
-        input_path = "pnh\\"
+
         output_path = "pnml\\"
         converter.read_pnm_np(sys.argv[2])
 
@@ -497,3 +499,4 @@ if __name__ == '__main__':
     elif int(sys.argv[1]) == 1:
         print("Converter PNML -> PNH")
         converter.read_pnml(sys.argv[2])
+
