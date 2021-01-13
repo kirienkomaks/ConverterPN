@@ -3,6 +3,7 @@ digraph {
 	P1
 	P2
 	P3
+	P4
 	t0
 	P0 -> t0
 	t0 -> P1

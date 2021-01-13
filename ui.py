@@ -180,6 +180,7 @@ class ChildPlace(tk.Toplevel):
         super().__init__(root)
         self.entry_place_marks = ttk.Entry(self)
         self.entry_place_name = ttk.Entry(self)
+        self.label_place_name = tk.Label(self)
         self.view = app
         self.db = db
         self.count = 0
@@ -191,8 +192,8 @@ class ChildPlace(tk.Toplevel):
         self.geometry('250x140+400+300')
         self.resizable(False, False)
 
-        label_place_name = tk.Label(self, text='Place  ' + str(self.count))
-        label_place_name.place(x=10, y=20)
+        self.label_place_name = tk.Label(self, text='Place  ' + str(self.count))
+        self.label_place_name.place(x=10, y=20)
         label_place_marks = tk.Label(self, text='Marks')
         label_place_marks.place(x=10, y=50)
 
@@ -222,6 +223,7 @@ class ChildTransition(tk.Toplevel):
         super().__init__(root)
         self.entry_transition_inputs = ttk.Entry(self)
         self.entry_transition_outputs = ttk.Entry(self)
+        self.label_transition_name = tk.Label(self)
         self.view = app
         self.db = db
         self.count = 0
@@ -233,8 +235,8 @@ class ChildTransition(tk.Toplevel):
         self.geometry('250x140+400+300')
         self.resizable(False, False)
 
-        label_transition_name = tk.Label(self, text='Transition  ' + str(self.count))
-        label_transition_name.place(x=10, y=20)
+        self.label_transition_name = tk.Label(self, text='Transition  ' + str(self.count))
+        self.label_transition_name.place(x=10, y=10)
         label_transition_inputs = tk.Label(self, text='Inputs')
         label_transition_inputs.place(x=10, y=40)
         label_transition_outputs = tk.Label(self, text='Outputs')
@@ -268,10 +270,14 @@ class UpdatePlace(ChildPlace):
     def __init__(self):
         super().__init__()
         self.init_edit()
+        self.name=""
         self.view = app
 
     def init_edit(self):
-        self.title('Update Position')
+        self.title('Update Place')
+        self.name = self.view.tree_place.set(self.view.tree_place.selection()[0], '#2')
+        self.label_place_name = tk.Label(self, text="Place to update: " + self.name)
+        self.label_place_name.place(x=10, y=20)
         btn_edit = ttk.Button(self, text='Update Position', command=self.destroy)
         btn_edit.place(x=30, y=100)
         btn_edit.bind('<Button-1>', lambda event: self.view.update_place_records(self.entry_place_marks.get()), self.destroy)
@@ -282,9 +288,13 @@ class UpdateTransition(ChildTransition):
         super().__init__()
         self.init_edit()
         self.view = app
+        self.name = ""
 
     def init_edit(self):
         self.title('Update Transition')
+        self.name = self.view.tree_transition.set(self.view.tree_transition.selection()[0], '#2')
+        self.label_transition_name = tk.Label(self, text="Transition to update: " + self.name)
+        self.label_transition_name.place(x=10, y=10)
         btn_edit = ttk.Button(self, text='Update Transition', command=self.destroy)
         btn_edit.place(x=30, y=100)
         btn_edit.bind('<Button-1>', lambda event: self.view.update_transition_records(self.entry_transition_inputs.get(),

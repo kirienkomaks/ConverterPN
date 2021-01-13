@@ -1,8 +1,9 @@
-graph 1 1.75 4.5
+graph 1 2.25 4.5
 node P0 0.875 4.25 0.75 0.5 P0 solid ellipse black lightgrey
 node P1 0.375 2.25 0.75 0.5 P1 solid ellipse black lightgrey
 node P2 1.375 2.25 0.75 0.5 P2 solid ellipse black lightgrey
 node P3 0.875 0.25 0.75 0.5 P3 solid ellipse black lightgrey
+node P4 1.875 4.25 0.75 0.5 P4 solid ellipse black lightgrey
 node t0 0.875 3.25 0.75 0.5 t0 solid ellipse black lightgrey
 node t1 0.875 1.25 0.75 0.5 t1 solid ellipse black lightgrey
 edge P0 t0 4 0.875 3.9958 0.875 3.8886 0.875 3.7599 0.875 3.6405 solid black
